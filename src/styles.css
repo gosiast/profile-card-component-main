@@ -1,5 +1,8 @@
 body {
-  background-image: (url(/images/bg-pattern-card.svg));
+  background-image: url("/images/bg-pattern-card.svg");
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 .wrapper {
   display: flex;
