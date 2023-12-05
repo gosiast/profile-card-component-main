@@ -13,10 +13,19 @@ body {
 
 .card {
   display: inline-block;
-  width: 290px;
+  align-items: center;
+  width: 300px;
   padding: 14px;
 }
 
+.container-statistics {
+  width: 300px;
+  margin: 14px;
+}
+
+.profile-picture-victor {
+  border-radius: 50%;
+}
 .profile-name {
   font-weight: 700;
 }
