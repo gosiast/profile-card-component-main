@@ -16,6 +16,10 @@ body {
   width: 290px;
   padding: 14px;
 }
+
+.profile-name {
+  font-weight: 700;
+}
 footer {
   background-color: #333;
   color: white;
