@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/src/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <title>Frontend Mentor | Profile card component</title>
-</head>
-<body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="profile-image">
+          <img src="/images/image-victor.jpg" alt="" />
+        </div>
+        <div class="profile-name">Victor Crest</div>
+        <div class="profile-age">26</div>
+        <div class="profile-location">London</div>
+        <hr />
+        <div class="container-statistic-numbers">
+          <div class="row">
+            <div class="col-4">80K</div>
+            <div class="col-4">803K</div>
+            <div class="col-4">1.4K</div>
+          </div>
+        </div>
+        <div class="container-statistic">
+          <div class="row">
+            <div class="col-4">Followers</div>
+            <div class="col-4">Likes</div>
+            <div class="col-4">Photos</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io/profile/gosiast" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Małgorzata Stano</a>.
+      </div>
+    </footer>
+  </body>
 </html>
