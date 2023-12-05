@@ -1,3 +1,6 @@
+body {
+  background-image: (url(/images/bg-pattern-card.svg));
+}
 .wrapper {
   display: flex;
   justify-content: center;
@@ -6,8 +9,8 @@
 }
 
 .card {
-    display:inline-block;
-  width: 240px;
+  display: inline-block;
+  width: 290px;
   padding: 14px;
 }
 footer {
