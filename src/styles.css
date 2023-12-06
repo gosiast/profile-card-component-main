@@ -44,22 +44,15 @@ body {
 
 .card {
   position: relative;
-  z-index: 2; /* Set a higher z-index for the card to ensure it's on top */
+  z-index: 2;
   display: flex;
   align-items: center;
   width: 300px;
   padding: 14px;
-  background-image: url("/images/bg-pattern-card.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-image: url('/images/bg-pattern-card.svg');
+  background-size:contain; /* or background-size: contain; or specific dimensions */
 }
 
-.card {
-  display: flex;
-  align-items: center;
-  width: 300px;
-  padding: 14px;
-}
 
 .container-statistics {
   width: 300px;
