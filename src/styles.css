@@ -9,16 +9,49 @@ body {
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: hsl(185, 75%, 39%);
-  background-image: url("/images/bg-pattern-bottom.svg"),
-    url("/images/bg-pattern-top.svg");
-  background-repeat: repeat-x, repeat-y; /* repeat-x for the first image, no-repeat for the second */
+  overflow: hidden;
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: top left, bottom right; /* position for each image */
+}
+
+.wrapper::before {
+  top: 0;
+  left: 0;
+  background-image: url("/images/bg-pattern-top.svg");
+  z-index: 1; /* Set a higher z-index for the top-left background */
+}
+
+.wrapper::after {
+  bottom: 0;
+  right: 0;
+  background-image: url("/images/bg-pattern-bottom.svg");
+  z-index: 1; /* Set a higher z-index for the bottom-right background */
+}
+
+.card {
+  position: relative;
+  z-index: 2; /* Set a higher z-index for the card to ensure it's on top */
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 14px;
+  background-image: url("/images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .card {
