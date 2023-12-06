@@ -14,8 +14,9 @@ body {
   align-items: center;
   height: 100vh;
   background-color: hsl(185, 75%, 39%);
-  background-image: url("/images/bg-pattern-bottom.svg");
-  background-repeat: repeat-x, no-repeat; /* repeat-x for the first image, no-repeat for the second */
+  background-image: url("/images/bg-pattern-bottom.svg"),
+    url("/images/bg-pattern-top.svg");
+  background-repeat: repeat-x, repeat-y; /* repeat-x for the first image, no-repeat for the second */
   background-size: cover;
   background-position: top left, bottom right; /* position for each image */
 }

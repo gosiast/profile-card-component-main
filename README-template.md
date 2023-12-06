@@ -66,7 +66,16 @@ To see how you can add code snippets, see below:
 }
 ```
 
-I had a problem with implementing the photos in svg format.
+I had a problem with implementing the background images photos. 
+
+Solutions I tried: 
+" background-image: url("/images/bg-pattern-bottom.svg"),
+    url("/images/bg-pattern-top.svg");
+  background-repeat: repeat-x, repeat-y; /* repeat-x for the first image, no-repeat for the second */
+  background-size: cover;
+  background-position: top left, bottom right; /* position for each image */
+"
+still doesn't work though.
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
