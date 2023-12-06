@@ -2,7 +2,6 @@
   --color-secondary: hsl(0, 0%, 59%);
 }
 body {
-  background-image: url("/images/bg-pattern-card.svg");
   font-size: 18px;
   font-family: "Kumbh Sans", sans-serif;
   font-family: "League Spartan", sans-serif;
@@ -31,7 +30,7 @@ body {
 }
 
 .container-statistic {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--color-secondary);
 }
 .container-statistic-numbers,
@@ -47,13 +46,17 @@ body {
   font-weight: 700;
 }
 
-.profile-location, .profile-age {
+.profile-location,
+.profile-age {
   color: var(--color-secondary);
 }
 footer {
   background-color: #333;
   color: white;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a {
