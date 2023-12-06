@@ -1,3 +1,6 @@
+:root {
+  --color-secondary: hsl(0, 0%, 59%);
+}
 body {
   background-image: url("/images/bg-pattern-card.svg");
   font-size: 18px;
@@ -29,6 +32,7 @@ body {
 
 .container-statistic {
   font-size: 10px;
+  color: var(--color-secondary);
 }
 .container-statistic-numbers,
 .container-statistic {
@@ -41,6 +45,10 @@ body {
 }
 .profile-name {
   font-weight: 700;
+}
+
+.profile-location, .profile-age {
+  color: var(--color-secondary);
 }
 footer {
   background-color: #333;
