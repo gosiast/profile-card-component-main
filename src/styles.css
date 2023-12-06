@@ -6,6 +6,11 @@ body {
   font-size: 18px;
   font-family: "Kumbh Sans", sans-serif;
   font-family: "League Spartan", sans-serif;
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-size: 622px 622px, 623px 623px;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 21rem) calc(86vh - 59rem), 
+                         calc(50% + 18rem) calc(50vh + 1rem);
 }
 
 .wrapper {
@@ -18,30 +23,6 @@ body {
   overflow: hidden;
 }
 
-.wrapper::before,
-.wrapper::after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.wrapper::before {
-  top: 0;
-  left: 0;
-  background-image: url("/images/bg-pattern-top.svg");
-  z-index: 1; /* Set a higher z-index for the top-left background */
-}
-
-.wrapper::after {
-  bottom: 0;
-  right: 0;
-  background-image: url("/images/bg-pattern-bottom.svg");
-  z-index: 1; /* Set a higher z-index for the bottom-right background */
-}
-
 .card {
   position: relative;
   z-index: 2;
@@ -50,7 +31,7 @@ body {
   width: 300px;
   padding: 14px;
   background-image: url('/images/bg-pattern-card.svg');
-  background-size:contain; /* or background-size: contain; or specific dimensions */
+  background-size; /* or background-size: contain; or specific dimensions */
 }
 
 
