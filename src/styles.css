@@ -23,6 +23,10 @@ body {
   margin: 14px;
 }
 
+.container-statistic-numbers , .container-statistic{
+  margin-left: 20px;
+}
+
 .profile-picture-victor {
   border-radius: 50%;
 }
