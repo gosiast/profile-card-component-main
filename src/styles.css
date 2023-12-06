@@ -23,8 +23,17 @@ body {
   margin: 14px;
 }
 
-.container-statistic-numbers , .container-statistic{
+.container-statistic-numbers {
+  font-weight: 700;
+}
+
+.container-statistic {
+  font-size: 10px;
+}
+.container-statistic-numbers,
+.container-statistic {
   margin-left: 20px;
+  text-align: center;
 }
 
 .profile-picture-victor {
